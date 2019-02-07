@@ -12,8 +12,12 @@ RCT_EXPORT_MODULE();
     return dispatch_get_main_queue();
 }
 
-RCT_EXPORT_METHOD(initialize:(NSString *)appId appSecret:(NSString *)appSecret apiKey:(NSString *)apiKey)
+RCT_EXPORT_METHOD(initialize:(NSDictionary *)config)
 {
+  NSString* appId = config[@"appId"];
+  NSString* appSecret = config[@"appSecret"];
+  NSString* apiKey = config[@"apiKey"];
+
   LandmarksIDManagerDelegate* landmarksManager = [LandmarksIDManagerDelegate initialize: appId appSecret: appSecret apiKey: apiKey];
   
   [landmarksManager setup];
