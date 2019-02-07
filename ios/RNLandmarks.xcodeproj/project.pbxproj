@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E344BD0220BCCA800CDDB1C /* LandmarksIDiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E344BCF220BCCA800CDDB1C /* LandmarksIDiOS.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNLandmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNLandmarks.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E344BCF220BCCA800CDDB1C /* LandmarksIDiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LandmarksIDiOS.framework; path = ../../../../Downloads/LandmarksIDiOS.framework; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRNLandmarks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNLandmarks.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNLandmarks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNLandmarks.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNLandmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNLandmarks.m; sourceTree = "<group>"; };
@@ -33,12 +35,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E344BD0220BCCA800CDDB1C /* LandmarksIDiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E344BCE220BCCA700CDDB1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E344BCF220BCCA800CDDB1C /* LandmarksIDiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +64,7 @@
 				B3E7B5881CC2AC0600A0062D /* RNLandmarks.h */,
 				B3E7B5891CC2AC0600A0062D /* RNLandmarks.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				0E344BCE220BCCA700CDDB1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,8 +215,12 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/LandmarksIDiOS.framework/**",
+					"$(SRCROOT)/LandmarksIDiOS.framework/Frameworks/**",
+				);
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
@@ -219,6 +235,10 @@
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/LandmarksIDiOS.framework/**",
+					"$(SRCROOT)/LandmarksIDiOS.framework/Frameworks/**",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
