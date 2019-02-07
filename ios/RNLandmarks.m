@@ -1,5 +1,6 @@
 
 #import "RNLandmarks.h"
+#import <React/RCTConvert.h>
 
 @import LandmarksIDiOS;
 
@@ -12,11 +13,11 @@ RCT_EXPORT_MODULE();
     return dispatch_get_main_queue();
 }
 
-RCT_EXPORT_METHOD(initialize:(NSDictionary *)config)
+RCT_EXPORT_METHOD(initialize: (NSDictionary *)config)
 {
-  NSString* appId = config[@"appId"];
-  NSString* appSecret = config[@"appSecret"];
-  NSString* apiKey = config[@"apiKey"];
+  NSString* appId = [RCTConvert NSString:config[@"appId"]]; 
+  NSString* appSecret = [RCTConvert NSString:config[@"appSecret"]]; 
+  NSString* apiKey = [RCTConvert NSString:config[@"apiKey"]]; 
 
   LandmarksIDManagerDelegate* landmarksManager = [LandmarksIDManagerDelegate initialize: appId appSecret: appSecret apiKey: apiKey];
   
