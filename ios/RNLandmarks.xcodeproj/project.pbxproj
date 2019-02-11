@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E344BD5220BD09E00CDDB1C /* LandmarksIDiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E344BD4220BD09E00CDDB1C /* LandmarksIDiOS.framework */; };
+		0EBA7C1722110FD400EE397B /* LandmarksIDiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBA7C1622110FD400EE397B /* LandmarksIDiOS.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNLandmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNLandmarks.m */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E344BD4220BD09E00CDDB1C /* LandmarksIDiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LandmarksIDiOS.framework; sourceTree = "<group>"; };
+		0EBA7C1622110FD400EE397B /* LandmarksIDiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LandmarksIDiOS.framework; path = ../../../../Downloads/LandmarksIDiOS.framework; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRNLandmarks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNLandmarks.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNLandmarks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNLandmarks.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNLandmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNLandmarks.m; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E344BD5220BD09E00CDDB1C /* LandmarksIDiOS.framework in Frameworks */,
+				0EBA7C1722110FD400EE397B /* LandmarksIDiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +45,7 @@
 		0E344BCE220BCCA700CDDB1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E344BD4220BD09E00CDDB1C /* LandmarksIDiOS.framework */,
+				0EBA7C1622110FD400EE397B /* LandmarksIDiOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -255,9 +255,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
 					"$(SRCROOT)/LandmarksIDiOS.framework/**",
 					"$(SRCROOT)/LandmarksIDiOS.framework/Frameworks/**",
-					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -276,9 +276,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
 					"$(SRCROOT)/LandmarksIDiOS.framework/**",
 					"$(SRCROOT)/LandmarksIDiOS.framework/Frameworks/**",
-					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
